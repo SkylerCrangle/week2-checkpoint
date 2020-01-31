@@ -1,0 +1,8 @@
+.my-img {
+  max-width: 350px;
+  height: auto;
+  border-style: double;
+  border-color: green;
+  border-width: 10px;
+  border-radius: 50%;
+}
