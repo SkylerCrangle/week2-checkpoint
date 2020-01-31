@@ -27,27 +27,31 @@
     </header>
     <main class="row">
       <div class="col-12 text-center">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_VLJL1sdsUyUsD8MEj599cd9HvNlrvpOLbGQWPRIe7jxUyat&s"
-          alt="" class="img-fluid img-rounded my-img" onclick="clickImg()">
+        <img src="mainmushroompic.png" alt="" class="img-rounded my-img img-fluid" onclick="clickImg()">
       </div>
-      <div class="col-md-4 col-7 d-flex flex-column offset-md-8 offset-5">
-        <button class="btn btn-success m-1 d-flex justify-content-between" id="idShovel" onclick="btnShovel()">
 
+
+
+      <div class="col-12 d-flex flex-row">
+        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idShovel" onclick="btnShovel()">
           <img src="shovelpic.png" alt="" class="img-fluid my-gnome-btn">
           <span id="idShovelPrice"></span>
-
         </button>
-        <button class="btn btn-success m-1 d-flex justify-content-between" id="idBasket" onclick="btnBasket()">
+        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idBasket" onclick="btnBasket()">
           <img src="basketpic.png" alt="" class="img-fluid my-gnome-btn">
           <span id="idBasketPrice"></span>
         </button>
-        <button class="btn btn-success m-1 d-flex justify-content-between" id="idGnome" onclick="btnGnome()">
+      </div>
+      <div class="col-12 d-flex flex-row">
+        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idGnome" onclick="btnGnome()">
           <img src="gnomepic.png" alt="" class="img-fluid my-gnome-btn">
           <span id="idGnomePrice"></span>
         </button>
-        <button class="btn btn-success m-1 d-flex justify-content-between" id="idReindeer"
-          onclick="btnReindeer()">Reindeer
+        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idReindeer"
+          onclick="btnReindeer()">
+          <img src="reindeerpic.png" alt="" class="img-fluid my-gnome-btn">
+          <span id="idReindeerCount"></span>
+          <span id="idReindeerStats"></span>
           <span id="idReindeerPrice"></span>
         </button>
       </div>

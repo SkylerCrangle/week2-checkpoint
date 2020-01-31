@@ -1,6 +1,6 @@
 .my-img {
-  max-width: 350px;
-  height: auto;
+  
+  width: 70%;
   border-style: double;
   border-color: green;
   border-width: 10px;
@@ -8,6 +8,7 @@
 }
 
 .my-gnome-btn {
-  width: 4em;
-  height: auto;
+  
+  height: 4em;
+  width: auto;
 }
