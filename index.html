@@ -23,17 +23,17 @@
         <h1>Collect Mushrooms</h1>
       </div>
       <div class="col-12" id="count">Mushrooms: (count) </div>
-      <div class="col-12">Resources: (what: howmany: helpingthismuch</div>
+      <div class="col-12" id="youritems">Resources: (what: howmany: helpingthismuch</div>
     </header>
     <main class="row">
       <div class="col-12 text-center">
         <img src="https://image.flaticon.com/icons/svg/1170/1170240.svg" alt="" class="img-fluid" onclick="clickImg()">
       </div>
       <div class="col-12 text-right">
-        <button class="btn btn-success m-1" onclick="addUpgrade('shovel')">Shovel</button>
-        <button class="btn btn-success m-1" onclick="addUpgrade('basket')">Basket</button>
-        <button class="btn btn-success m-1" onclick="addUpgrade('gnome')">Gnome</button>
-        <button class="btn btn-success m-1" onclick="addUpgrade('reindeer')">Reindeer</button>
+        <button class="btn btn-success m-1" id="idShovel" onclick="btnShovel()">Shovel</button>
+        <button class="btn btn-success m-1" id="idBasket" onclick="btnBasket()">Basket</button>
+        <button class="btn btn-success m-1" id="idGnome" onclick="btnGnome()">Gnome</button>
+        <button class="btn btn-success m-1" id="idReindeer" onclick="btnReindeer()">Reindeer</button>
       </div>
     </main>
     <footer class=" row">
