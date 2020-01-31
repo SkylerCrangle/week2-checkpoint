@@ -6,3 +6,8 @@
   border-width: 10px;
   border-radius: 50%;
 }
+
+.my-gnome-btn {
+  width: 4em;
+  height: auto;
+}
