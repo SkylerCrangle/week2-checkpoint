@@ -57,52 +57,52 @@ function updateScreen() {
 function disableButtons() {
   //shovel
   if (totalCount < upgrade.shovel.cost) {
-    document.getElementById("idShovel").innerText = (`Shovel: ${upgrade.shovel.cost}`)
+    document.getElementById("idShovelPrice").innerText = (`${upgrade.shovel.cost}`)
     document.getElementById("idShovel").style.pointerEvents = "none"
     document.getElementById("idShovel").classList.remove("btn-success")
     document.getElementById("idShovel").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.shovel.cost) {
-    document.getElementById("idShovel").innerText = (`Shovel: ${upgrade.shovel.cost}`)
+    document.getElementById("idShovelPrice").innerText = (`${upgrade.shovel.cost}`)
     document.getElementById("idShovel").style.pointerEvents = "all"
     document.getElementById("idShovel").classList.remove("btn-secondary")
     document.getElementById("idShovel").classList.add("btn-success")
   }
   //basket
   if (totalCount < upgrade.basket.cost) {
-    document.getElementById("idBasket").innerText = (`Basket: ${upgrade.basket.cost}`)
+    document.getElementById("idBasketPrice").innerText = (`${upgrade.basket.cost}`)
     document.getElementById("idBasket").style.pointerEvents = "none"
     document.getElementById("idBasket").classList.remove("btn-success")
     document.getElementById("idBasket").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.basket.cost) {
-    document.getElementById("idBasket").innerText = (`Basket: ${upgrade.basket.cost}`)
+    document.getElementById("idBasketPrice").innerText = (`${upgrade.basket.cost}`)
     document.getElementById("idBasket").style.pointerEvents = "all"
     document.getElementById("idBasket").classList.remove("btn-secondary")
     document.getElementById("idBasket").classList.add("btn-success")
   }
   //gnome
   if (totalCount < upgrade.gnome.cost) {
-    document.getElementById("idGnome").innerText = (`Gnome: ${upgrade.gnome.cost}`)
+    document.getElementById("idGnomePrice").innerText = (`${upgrade.gnome.cost}`)
     document.getElementById("idGnome").style.pointerEvents = "none"
     document.getElementById("idGnome").classList.remove("btn-success")
     document.getElementById("idGnome").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.gnome.cost) {
-    document.getElementById("idGnome").innerText = (`Gnome: ${upgrade.gnome.cost}`)
+    document.getElementById("idGnomePrice").innerText = (`${upgrade.gnome.cost}`)
     document.getElementById("idGnome").style.pointerEvents = "all"
     document.getElementById("idGnome").classList.remove("btn-secondary")
     document.getElementById("idGnome").classList.add("btn-success")
   }
   //reindeer
   if (totalCount < upgrade.reindeer.cost) {
-    document.getElementById("idReindeer").innerText = (`Reindeer: ${upgrade.reindeer.cost}`)
+    document.getElementById("idReindeerPrice").innerText = (`${upgrade.reindeer.cost}`)
     document.getElementById("idReindeer").style.pointerEvents = "none"
     document.getElementById("idReindeer").classList.remove("btn-success")
     document.getElementById("idReindeer").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.reindeer.cost) {
-    document.getElementById("idReindeer").innerText = (`Reindeer: ${upgrade.reindeer.cost}`)
+    document.getElementById("idReindeerPrice").innerText = (`${upgrade.reindeer.cost}`)
     document.getElementById("idReindeer").style.pointerEvents = "all"
     document.getElementById("idReindeer").classList.remove("btn-secondary")
     document.getElementById("idReindeer").classList.add("btn-success")

@@ -31,11 +31,23 @@
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_VLJL1sdsUyUsD8MEj599cd9HvNlrvpOLbGQWPRIe7jxUyat&s"
           alt="" class="img-fluid img-rounded my-img" onclick="clickImg()">
       </div>
-      <div class="col-12 text-right">
-        <button class="btn btn-success m-1" id="idShovel" onclick="btnShovel()">Shovel</button>
-        <button class="btn btn-success m-1" id="idBasket" onclick="btnBasket()">Basket</button>
-        <button class="btn btn-success m-1" id="idGnome" onclick="btnGnome()">Gnome</button>
-        <button class="btn btn-success m-1" id="idReindeer" onclick="btnReindeer()">Reindeer</button>
+      <div class="col-md-4 col-7 d-flex flex-column offset-md-8 offset-5">
+        <button class="btn btn-success m-1 d-flex justify-content-between" id="idShovel" onclick="btnShovel()">
+
+          Shovel
+          <span id="idShovelPrice"></span>
+
+        </button>
+        <button class="btn btn-success m-1 d-flex justify-content-between" id="idBasket" onclick="btnBasket()">Basket
+          <span id="idBasketPrice"></span>
+        </button>
+        <button class="btn btn-success m-1 d-flex justify-content-between" id="idGnome" onclick="btnGnome()">Gnome
+          <span id="idGnomePrice"></span>
+        </button>
+        <button class="btn btn-success m-1 d-flex justify-content-between" id="idReindeer"
+          onclick="btnReindeer()">Reindeer
+          <span id="idReindeerPrice"></span>
+        </button>
       </div>
     </main>
     <footer class=" row">
