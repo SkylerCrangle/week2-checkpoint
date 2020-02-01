@@ -16,55 +16,56 @@
 </head>
 
 
-<body>
-  <div class="container-fluid my-bg">
-    <header class="row">
-      <div class="col-12 text-center">
-        <h1>Collect Mushrooms</h1>
-      </div>
-      <div class="col-12 text-center">
-        <h4 id="count">
+<body class="container-fluid my-bg">
+  <header class="row">
+    <div class="col-12 text-center">
+      <h1>Collect Mushrooms</h1>
+    </div>
+    <div class="col-12 text-center">
+      <h4 id="count"></h4>
+    </div>
+    <div class="col-12" id="youritems"></div>
+  </header>
 
-        </h4>
-      </div>
-      <div class="col-12" id="youritems"></div>
-    </header>
-    <main class="row">
+  <main>
+
+
+    <div class="row">
       <div class="col-12 col-sm-6 offset-sm-3 text-center">
         <img src="mainmushroompic.png" alt="" class="img-rounded my-img img-fluid m-3" onclick="clickImg()">
       </div>
+    </div>
+
+    <div class="row justify-content-around p-3">
 
 
-      <div class="col-12  d-flex flex-row">
-        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idShovel" onclick="btnShovel()">
-          <img src="shovelpic.png" alt="" class="img-fluid my-gnome-btn">
-          <span id="idShovelPrice"></span>
-        </button>
-        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idBasket" onclick="btnBasket()">
-          <img src="basketpic.png" alt="" class="img-fluid my-gnome-btn">
-          <span id="idBasketPrice"></span>
-        </button>
+      <div class="btn btn-success d-flex justify-content-between col-12 col-sm-5 m-1 " id="idShovel"
+        onclick="btnShovel()">
+        <img src="shovelpic.png" alt="" class="img-fluid my-gnome-btn">
+        <span id="idShovelPrice"></span>
       </div>
-      <div class="col-12 d-flex flex-row">
-        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idGnome" onclick="btnGnome()">
-          <img src="gnomepic.png" alt="" class="img-fluid my-gnome-btn">
-          <span id="idGnomePrice"></span>
-        </button>
-        <button class="btn btn-success m-1 d-flex justify-content-between col-6" id="idReindeer"
-          onclick="btnReindeer()">
-          <img src="reindeerpic.png" alt="" class="img-fluid my-gnome-btn">
 
-          <span id="idReindeerPrice"></span>
-        </button>
+
+      <div class="btn btn-success d-flex justify-content-between col-12 col-sm-5 m-1 " id="idBasket"
+        onclick="btnBasket()">
+        <img src="basketpic.png" alt="" class="img-fluid my-gnome-btn">
+        <span id="idBasketPrice"></span>
       </div>
-    </main>
-    <footer class=" row">
 
-    </footer>
+      <div class="btn btn-success d-flex justify-content-between col-12 col-sm-5 m-1 " id="idGnome"
+        onclick="btnGnome()">
+        <img src="gnomepic.png" alt="" class="img-fluid my-gnome-btn">
+        <span id="idGnomePrice"></span>
+      </div>
 
+      <div class="btn btn-success d-flex justify-content-between col-12 col-sm-5 m-1 " id="idReindeer"
+        onclick="btnReindeer()">
+        <img src="reindeerpic.png" alt="" class="img-fluid my-gnome-btn">
+        <span id="idReindeerPrice"></span>
+      </div>
 
-
-  </div>
+    </div>
+  </main>
 
 
 
