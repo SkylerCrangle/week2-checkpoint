@@ -13,6 +13,7 @@
 
 .my-bg {
   background-image: url(https://i.pinimg.com/originals/06/d9/e2/06d9e2d6b2c26a9af5b98a0aa7048f1c.jpg);
+  min-height: 100vh;
   height: 100%;
   background-repeat:no-repeat;
   background-position: center;
