@@ -47,62 +47,68 @@ function clickImg() {
 //update screen
 function updateScreen() {
   disableButtons()
-  document.getElementById("count").innerText = (`Mushrooms: ${totalCount}`)
-  document.getElementById("youritems").innerText = (`Shovels: ${upgrade.shovel.quantity} +${upgrade.shovel.quantity * upgrade.shovel.addClickPower} click power.
-  Basket: ${upgrade.basket.quantity} +${upgrade.basket.quantity * upgrade.basket.addClickPower} click power.
-  Gnomes: ${upgrade.gnome.quantity} helping find ${upgrade.gnome.quantity} mushrooms every 3 seconds. 
-  Reindeer: ${upgrade.reindeer.quantity} helping find ${50 * upgrade.reindeer.quantity} every minute`)
+  //main
+  document.getElementById("count").innerText = (`${totalCount}`)
+  //shovel
+  document.getElementById("idShovelPrice").innerText = (`Cost ${upgrade.shovel.cost}
+  Using ${upgrade.shovel.quantity}
+  Gathers +${upgrade.shovel.addClickPower * upgrade.shovel.quantity}`)
+  //basket
+  document.getElementById("idBasketPrice").innerText = (`Cost ${upgrade.basket.cost}
+  Using ${upgrade.basket.quantity}
+  Gathers +${upgrade.basket.addClickPower * upgrade.basket.quantity}`)
+  //gnome
+  document.getElementById("idGnomePrice").innerText = (`Cost ${upgrade.gnome.cost}
+  Helping ${upgrade.gnome.quantity}
+  Finds ${upgrade.gnome.quantity} per 3s`)
+  //reindeer
+  document.getElementById("idReindeerPrice").innerText = (`Cost ${upgrade.reindeer.cost}
+Helping ${upgrade.reindeer.quantity}
+Finds ${upgrade.reindeer.quantity * 50} per min`)
+
 }
 
 function disableButtons() {
   //shovel
   if (totalCount < upgrade.shovel.cost) {
-    document.getElementById("idShovelPrice").innerText = (`${upgrade.shovel.cost}`)
     document.getElementById("idShovel").style.pointerEvents = "none"
     document.getElementById("idShovel").classList.remove("btn-success")
     document.getElementById("idShovel").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.shovel.cost) {
-    document.getElementById("idShovelPrice").innerText = (`${upgrade.shovel.cost}`)
     document.getElementById("idShovel").style.pointerEvents = "all"
     document.getElementById("idShovel").classList.remove("btn-secondary")
     document.getElementById("idShovel").classList.add("btn-success")
   }
   //basket
   if (totalCount < upgrade.basket.cost) {
-    document.getElementById("idBasketPrice").innerText = (`${upgrade.basket.cost}`)
     document.getElementById("idBasket").style.pointerEvents = "none"
     document.getElementById("idBasket").classList.remove("btn-success")
     document.getElementById("idBasket").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.basket.cost) {
-    document.getElementById("idBasketPrice").innerText = (`${upgrade.basket.cost}`)
     document.getElementById("idBasket").style.pointerEvents = "all"
     document.getElementById("idBasket").classList.remove("btn-secondary")
     document.getElementById("idBasket").classList.add("btn-success")
   }
   //gnome
   if (totalCount < upgrade.gnome.cost) {
-    document.getElementById("idGnomePrice").innerText = (`${upgrade.gnome.cost}`)
     document.getElementById("idGnome").style.pointerEvents = "none"
     document.getElementById("idGnome").classList.remove("btn-success")
     document.getElementById("idGnome").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.gnome.cost) {
-    document.getElementById("idGnomePrice").innerText = (`${upgrade.gnome.cost}`)
     document.getElementById("idGnome").style.pointerEvents = "all"
     document.getElementById("idGnome").classList.remove("btn-secondary")
     document.getElementById("idGnome").classList.add("btn-success")
   }
   //reindeer
   if (totalCount < upgrade.reindeer.cost) {
-    document.getElementById("idReindeerPrice").innerText = (`${upgrade.reindeer.cost}`)
     document.getElementById("idReindeer").style.pointerEvents = "none"
     document.getElementById("idReindeer").classList.remove("btn-success")
     document.getElementById("idReindeer").classList.add("btn-secondary")
   }
   else if (totalCount >= upgrade.reindeer.cost) {
-    document.getElementById("idReindeerPrice").innerText = (`${upgrade.reindeer.cost}`)
     document.getElementById("idReindeer").style.pointerEvents = "all"
     document.getElementById("idReindeer").classList.remove("btn-secondary")
     document.getElementById("idReindeer").classList.add("btn-success")

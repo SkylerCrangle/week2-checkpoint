@@ -1,5 +1,4 @@
 .my-img {
-  
   width: 70%;
   border-style: double;
   border-color: green;
@@ -8,7 +7,14 @@
 }
 
 .my-gnome-btn {
-  
   height: 4em;
   width: auto;
+}
+
+.my-bg {
+  background-image: url(https://i.pinimg.com/originals/06/d9/e2/06d9e2d6b2c26a9af5b98a0aa7048f1c.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
