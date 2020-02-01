@@ -1,9 +1,12 @@
 //upgrades object list
 
+let upgradeArr = [];
+
+
 let upgrade = {
   shovel: {
     cost: 15,
-    priceIncrement: 5,
+    priceIncrement: 100,
     addClickPower: 5,
     addResourceValue: 0,
     quantity: 0,
@@ -33,10 +36,8 @@ let upgrade = {
 }
 
 let totalCount = 0;
-let upgradeArr = [];
 let clickPower = 1;
 updateScreen()
-
 
 //click on image
 function clickImg() {
@@ -64,7 +65,7 @@ function updateScreen() {
   //reindeer
   document.getElementById("idReindeerPrice").innerText = (`Cost ${upgrade.reindeer.cost}
 Helping ${upgrade.reindeer.quantity}
-Finds ${upgrade.reindeer.quantity * 50} per min`)
+Finds ${upgrade.reindeer.quantity * 50} per 45s`)
 
 }
 
@@ -147,7 +148,7 @@ function btnReindeer() {
   totalCount -= upgrade.reindeer.cost;
   upgrade.reindeer.cost += upgrade.reindeer.priceIncrement;
   updateScreen()
-  setInterval(autoFriends, 60000)
+  setInterval(autoFriends, 45000)
 }
 
 function autoFriends() {
